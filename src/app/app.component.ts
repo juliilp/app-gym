@@ -27,6 +27,12 @@ export class AppComponent {
   AbdominalesDia1: Ejercicios[] = [];
   AbdominalesDia2: Ejercicios[] = [];
   AbdominalesDia3: Ejercicios[] = [];
+
+  activeTab =
+    'px-4 py-2 rounded-lg bg-pink-700 text-white font-semibold shadow cursor-pointer';
+  inactiveTab =
+    'px-4 py-2 rounded-lg bg-gray-100 text-gray-800 hover:bg-pink-100 transition cursor-pointer';
+
   constructor($ejerciciosService: EjerciciosServiceService) {
     this.ejerciciosService = $ejerciciosService.arrayGym;
     this.Pecho = $ejerciciosService.Pecho;

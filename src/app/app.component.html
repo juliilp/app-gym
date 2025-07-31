@@ -1,8 +1,23 @@
 <main class="flex flex-col gap-3 justify-center items-center w-full">
-  <section class="flex gap-3">
-    <button (click)="seleccionarDia(1)">Dia1</button>
-    <button (click)="seleccionarDia(2)">Dia2</button>
-    <button (click)="seleccionarDia(3)">Dia3</button>
+  <section class="flex gap-2 justify-center my-6">
+    <button
+      (click)="seleccionarDia(1)"
+      [class]="dia === 1 ? activeTab : inactiveTab"
+    >
+      Día 1
+    </button>
+    <button
+      (click)="seleccionarDia(2)"
+      [class]="dia === 2 ? activeTab : inactiveTab"
+    >
+      Día 2
+    </button>
+    <button
+      (click)="seleccionarDia(3)"
+      [class]="dia === 3 ? activeTab : inactiveTab"
+    >
+      Día 3
+    </button>
   </section>
 
   @if (dia == 1) {
