@@ -1,1 +1,73 @@
-<p class="text-amber-300">asddd</p>
+<main class="flex flex-col gap-3 justify-center items-center w-full">
+  <section class="flex flex-col gap-4">
+    <span>Dia: 1</span>
+    <h2>Pecho</h2>
+    @for (item of Pecho; track $index) {
+    <app-card-ejercicio
+      [nombreEjercicio]="item.nombreEjercicio"
+      [imagenGif]="item.imagenGif"
+      [masInformacion]="item.masInformacion"
+      [pesoUtilizado]="item.pesoUtilizado"
+      [repiticionesYSeries]="item.repiticionesYSeries"
+    />
+    }
+    <h2>Triceps</h2>
+    @for (item of Triceps; track $index) {
+    <app-card-ejercicio
+      [nombreEjercicio]="item.nombreEjercicio"
+      [imagenGif]="item.imagenGif"
+      [masInformacion]="item.masInformacion"
+      [pesoUtilizado]="item.pesoUtilizado"
+      [repiticionesYSeries]="item.repiticionesYSeries"
+    />
+    }
+  </section>
+
+  <section class="flex flex-col gap-4">
+    <span>Dia: 2</span>
+    <h2>Biceps</h2>
+    @for (item of Biceps; track $index) {
+    <app-card-ejercicio
+      [nombreEjercicio]="item.nombreEjercicio"
+      [imagenGif]="item.imagenGif"
+      [masInformacion]="item.masInformacion"
+      [pesoUtilizado]="item.pesoUtilizado"
+      [repiticionesYSeries]="item.repiticionesYSeries"
+    />
+    }
+    <h2>Espalda</h2>
+    @for (item of Espalda; track $index) {
+    <app-card-ejercicio
+      [nombreEjercicio]="item.nombreEjercicio"
+      [imagenGif]="item.imagenGif"
+      [masInformacion]="item.masInformacion"
+      [pesoUtilizado]="item.pesoUtilizado"
+      [repiticionesYSeries]="item.repiticionesYSeries"
+    />
+    }
+  </section>
+
+  <section class="flex flex-col gap-4">
+    <span>Dia: 3</span>
+    <h2>Piernas</h2>
+    @for (item of Piernas; track $index) {
+    <app-card-ejercicio
+      [nombreEjercicio]="item.nombreEjercicio"
+      [imagenGif]="item.imagenGif"
+      [masInformacion]="item.masInformacion"
+      [pesoUtilizado]="item.pesoUtilizado"
+      [repiticionesYSeries]="item.repiticionesYSeries"
+    />
+    }
+    <h2>Hombros</h2>
+    @for (item of Hombros; track $index) {
+    <app-card-ejercicio
+      [nombreEjercicio]="item.nombreEjercicio"
+      [imagenGif]="item.imagenGif"
+      [masInformacion]="item.masInformacion"
+      [pesoUtilizado]="item.pesoUtilizado"
+      [repiticionesYSeries]="item.repiticionesYSeries"
+    />
+    }
+  </section>
+</main>
