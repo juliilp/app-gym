@@ -1,5 +1,4 @@
 import { DiaGym } from '../models/ArrayGym.model';
-
 const arraygym: DiaGym[] = [
   {
     dia: '1',
@@ -9,8 +8,8 @@ const arraygym: DiaGym[] = [
         nombreEjercicio: 'Press plano manc',
         repiticionesYSeries: '4x10',
         pesoUtilizado: '25kg',
-        masInformacion: 'En el gym de DT, le pongo 4 barritas',
-        imagenGif: '',
+        masInformacion: '',
+        imagenGif: 'Pecho/PressPlanoManc.gif',
       },
       {
         nombreEjercicio: 'Frances',
@@ -18,7 +17,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '7.5kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Triceps/Frances.gif',
       },
       {
         nombreEjercicio: 'Apertura plana manc 4x15',
@@ -26,7 +25,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '??',
         masInformacion: 'como 7 ladrillos',
-        imagenGif: '',
+        imagenGif: 'Pecho/AperturaPlanaMancuerna.gif',
       },
       {
         nombreEjercicio: 'Tríceps poleas',
@@ -34,7 +33,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '??',
         masInformacion: 'como 8 ladrillos',
-        imagenGif: '',
+        imagenGif: 'Triceps/TricepPolea.gif',
       },
       {
         nombreEjercicio: 'Pull over poleas',
@@ -42,7 +41,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '7.5kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Pecho/PulloverPoleas.gif',
       },
       {
         nombreEjercicio: 'Triceps Romana manc',
@@ -50,7 +49,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '7.5kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Triceps/TricepsRomanaManc.gif',
       },
       {
         nombreEjercicio: 'Cortos',
@@ -66,7 +65,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '3x30',
         pesoUtilizado: '',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Abdominales/Oblicuos.gif',
       },
     ],
   },
@@ -79,7 +78,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '50kg',
         masInformacion: 'como 10 ladrillos',
-        imagenGif: '',
+        imagenGif: 'Espalda/TironesAdelanteAbierto.gif',
       },
       {
         nombreEjercicio: 'Alternado',
@@ -87,7 +86,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '15kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Biceps/Alternado.gif',
       },
       {
         nombreEjercicio: 'Remo 1 brazo manc',
@@ -95,7 +94,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '15kg??',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Espalda/Remo1BrazoManc.gif',
       },
       {
         nombreEjercicio: 'Concentrado',
@@ -103,7 +102,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '15kg??',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Biceps/Concentrado.gif',
       },
       {
         nombreEjercicio: 'Dominadas',
@@ -111,7 +110,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: 'Al Fallo',
         pesoUtilizado: '',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Espalda/Dominadas.gif',
       },
       {
         nombreEjercicio: 'Tirones Supino',
@@ -119,7 +118,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '70kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Biceps/TironesSupino.gif',
       },
       {
         nombreEjercicio: 'Biceps polea',
@@ -127,7 +126,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '40kg',
         masInformacion: '6 o 7 ladrillos creo',
-        imagenGif: '',
+        imagenGif: 'Biceps/BicepsPolea.gif',
       },
       {
         nombreEjercicio: 'Abs completos',
@@ -143,7 +142,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '3x30',
         pesoUtilizado: '15kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Abdominales/Russian.gif',
       },
     ],
   },
@@ -151,12 +150,12 @@ const arraygym: DiaGym[] = [
     dia: '3',
     ejercicios: [
       {
-        nombreEjercicio: 'Press manc ',
+        nombreEjercicio: 'Press manc',
         tipoEjercicio: 'Hombros',
         repiticionesYSeries: '4x10',
         pesoUtilizado: '7.5kg??',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Hombros/PressMancuerna.gif',
       },
       {
         nombreEjercicio: 'Cuádriceps',
@@ -164,15 +163,15 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x15',
         pesoUtilizado: '60kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Piernas/Cuadriceps.gif',
       },
       {
-        nombreEjercicio: 'Vuelos lat 1 brazo',
+        nombreEjercicio: 'Vuelos laterales',
         tipoEjercicio: 'Hombros',
         repiticionesYSeries: '4x10',
         pesoUtilizado: '10kg??',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Hombros/VuelosLaterales.gif',
       },
       {
         nombreEjercicio: 'Isquios',
@@ -180,7 +179,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x15',
         pesoUtilizado: '35kg??',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Piernas/Isquios.gif',
       },
       {
         nombreEjercicio: 'Vuelos frente poleas',
@@ -188,7 +187,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x10',
         pesoUtilizado: '25kg??',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Hombros/VuelosFrentePoleas.gif',
       },
       {
         nombreEjercicio: 'Prensa',
@@ -196,7 +195,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '4x8',
         pesoUtilizado: '50kg',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Piernas/Prensa.gif',
       },
       {
         nombreEjercicio: 'Abs bici',
@@ -204,7 +203,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '3x20',
         pesoUtilizado: '',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Abdominales/Bici.gif',
       },
       {
         nombreEjercicio: 'Abs elevaciones',
@@ -220,7 +219,7 @@ const arraygym: DiaGym[] = [
         repiticionesYSeries: '3x10',
         pesoUtilizado: '',
         masInformacion: '',
-        imagenGif: '',
+        imagenGif: 'Abdominales/Rueda.gif',
       },
     ],
   },
