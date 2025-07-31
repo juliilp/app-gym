@@ -22,8 +22,8 @@
 
   @if (dia == 1) {
   <section class="flex flex-col gap-4">
-    <span>Dia: 1</span>
-    <h2>Pecho</h2>
+    <h1 [class]="cssDia">Día: 1</h1>
+    <h2 [class]="cssTituloEjercicio">Pecho</h2>
     @for (item of Pecho; track $index) {
     <app-card-ejercicio
       [nombreEjercicio]="item.nombreEjercicio"
@@ -33,7 +33,7 @@
       [repiticionesYSeries]="item.repiticionesYSeries"
     />
     }
-    <h2>Triceps</h2>
+    <h2 [class]="cssTituloEjercicio">Triceps</h2>
     @for (item of Triceps; track $index) {
     <app-card-ejercicio
       [nombreEjercicio]="item.nombreEjercicio"
@@ -43,12 +43,12 @@
       [repiticionesYSeries]="item.repiticionesYSeries"
     />
     }
-    <h2>Abdominales</h2>
+    <h2 [class]="cssTituloEjercicio">Abdominales</h2>
   </section>
   } @if(dia == 2){
   <section class="flex flex-col gap-4">
-    <span>Dia: 2</span>
-    <h2>Biceps</h2>
+    <h1 [class]="cssDia">Dia: 2</h1>
+    <h2 [class]="cssTituloEjercicio">Biceps</h2>
     @for (item of Biceps; track $index) {
     <app-card-ejercicio
       [nombreEjercicio]="item.nombreEjercicio"
@@ -58,7 +58,7 @@
       [repiticionesYSeries]="item.repiticionesYSeries"
     />
     }
-    <h2>Espalda</h2>
+    <h2 [class]="cssTituloEjercicio">Espalda</h2>
     @for (item of Espalda; track $index) {
     <app-card-ejercicio
       [nombreEjercicio]="item.nombreEjercicio"
@@ -72,8 +72,8 @@
   } @if(dia == 3){
 
   <section class="flex flex-col gap-4">
-    <span>Dia: 3</span>
-    <h2>Piernas</h2>
+    <h1 [class]="cssDia">Dia: 3</h1>
+    <h2 [class]="cssTituloEjercicio">Piernas</h2>
     @for (item of Piernas; track $index) {
     <app-card-ejercicio
       [nombreEjercicio]="item.nombreEjercicio"
@@ -83,7 +83,7 @@
       [repiticionesYSeries]="item.repiticionesYSeries"
     />
     }
-    <h2>Hombros</h2>
+    <h2 [class]="cssTituloEjercicio">Hombros</h2>
     @for (item of Hombros; track $index) {
     <app-card-ejercicio
       [nombreEjercicio]="item.nombreEjercicio"

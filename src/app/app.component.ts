@@ -33,6 +33,9 @@ export class AppComponent {
   inactiveTab =
     'px-4 py-2 rounded-lg bg-gray-100 text-gray-800 hover:bg-pink-100 transition cursor-pointer';
 
+  cssDia = 'text-sm text-gray-500';
+  cssTituloEjercicio =
+    'text-xl font-bold text-pink-700 border-b border-pink-200 pb-1';
   constructor($ejerciciosService: EjerciciosServiceService) {
     this.ejerciciosService = $ejerciciosService.arrayGym;
     this.Pecho = $ejerciciosService.Pecho;
