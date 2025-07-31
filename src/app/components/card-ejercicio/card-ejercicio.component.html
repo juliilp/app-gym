@@ -1,7 +1,27 @@
-<article class="border border-black w-[300px] p-6">
-  <p>{{ nombreEjercicio() }}</p>
-  <p>Peso: {{ pesoUtilizado() }} - Repeticiones: {{ repiticionesYSeries() }}</p>
-  <p>{{ masInformacion() }}</p>
-  <input type="checkbox" />
-  <img [src]="imagenGif()" width="300" height="300" alt="No imagen11" />
+<article
+  class="w-[300px] p-4 bg-white shadow-md rounded-xl border border-gray-300 space-y-4"
+>
+  <div class="space-y-1">
+    <h2 class="text-lg font-semibold text-gray-800">{{ nombreEjercicio() }}</h2>
+    <p class="text-sm text-gray-600">
+      Peso:
+      <span class="font-medium text-gray-800">{{ pesoUtilizado() }}</span> –
+      Repeticiones:
+      <span class="font-medium text-gray-800">{{ repiticionesYSeries() }}</span>
+    </p>
+    <p class="text-sm text-gray-600 italic">{{ masInformacion() }}</p>
+  </div>
+
+  <label class="flex items-center space-x-2">
+    <input type="checkbox" class="w-4 h-4 accent-green-500" />
+    <span class="text-sm text-gray-700">Marcar como completado</span>
+  </label>
+
+  <div class="overflow-hidden rounded-lg border border-gray-200">
+    <img
+      [src]="imagenGif()"
+      alt="Imagen del ejercicio"
+      class="w-full h-auto object-cover"
+    />
+  </div>
 </article>
