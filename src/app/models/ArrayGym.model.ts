@@ -1,4 +1,4 @@
-interface Ejercicios {
+export interface Ejercicios {
   tipoEjercicio:
     | 'Pecho'
     | 'Tríceps'
