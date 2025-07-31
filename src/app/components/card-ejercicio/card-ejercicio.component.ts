@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 import { Ejercicios } from '../../models/ArrayGym.model';
 
 @Component({
@@ -7,14 +7,9 @@ import { Ejercicios } from '../../models/ArrayGym.model';
   templateUrl: './card-ejercicio.component.html',
 })
 export class CardEjercicioComponent {
-  @Input()
-  nombreEjercicio: Ejercicios['nombreEjercicio'] = '';
-  @Input()
-  repiticionesYSeries: Ejercicios['repiticionesYSeries'] = '';
-  @Input()
-  pesoUtilizado: Ejercicios['pesoUtilizado'] = '';
-  @Input()
-  masInformacion: Ejercicios['masInformacion'] = '';
-  @Input()
-  imagenGif: Ejercicios['imagenGif'] = '';
+  nombreEjercicio = input<Ejercicios['nombreEjercicio']>('');
+  repiticionesYSeries = input<Ejercicios['repiticionesYSeries']>('');
+  pesoUtilizado = input<Ejercicios['pesoUtilizado']>('');
+  masInformacion = input<Ejercicios['masInformacion']>('');
+  imagenGif = input<Ejercicios['imagenGif']>('');
 }
