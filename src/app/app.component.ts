@@ -11,6 +11,11 @@ import { CardEjercicioComponent } from './components/card-ejercicio/card-ejercic
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  dia = 1;
+
+  seleccionarDia(diaSelect: 1 | 2 | 3) {
+    this.dia = diaSelect;
+  }
   title = 'app-gym';
   ejerciciosService: DiaGym[];
   Pecho: Ejercicios[] = [];

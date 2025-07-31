@@ -1,4 +1,11 @@
 <main class="flex flex-col gap-3 justify-center items-center w-full">
+  <section class="flex gap-3">
+    <button (click)="seleccionarDia(1)">Dia1</button>
+    <button (click)="seleccionarDia(2)">Dia2</button>
+    <button (click)="seleccionarDia(3)">Dia3</button>
+  </section>
+
+  @if (dia == 1) {
   <section class="flex flex-col gap-4">
     <span>Dia: 1</span>
     <h2>Pecho</h2>
@@ -22,7 +29,7 @@
     />
     }
   </section>
-
+  } @if(dia == 2){
   <section class="flex flex-col gap-4">
     <span>Dia: 2</span>
     <h2>Biceps</h2>
@@ -46,6 +53,7 @@
     />
     }
   </section>
+  } @if(dia == 3){
 
   <section class="flex flex-col gap-4">
     <span>Dia: 3</span>
@@ -70,4 +78,5 @@
     />
     }
   </section>
+  }
 </main>
