@@ -24,11 +24,15 @@ export class AppComponent {
   Biceps: Ejercicios[] = [];
   Hombros: Ejercicios[] = [];
   Piernas: Ejercicios[] = [];
-  Abdominales: Ejercicios[] = [];
+  AbdominalesDia1: Ejercicios[] = [];
+  AbdominalesDia2: Ejercicios[] = [];
+  AbdominalesDia3: Ejercicios[] = [];
   constructor($ejerciciosService: EjerciciosServiceService) {
     this.ejerciciosService = $ejerciciosService.arrayGym;
     this.Pecho = $ejerciciosService.Pecho;
-    this.Abdominales = $ejerciciosService.Abdominales;
+    this.AbdominalesDia1 = $ejerciciosService.AbdominalesDia1;
+    this.AbdominalesDia2 = $ejerciciosService.AbdominalesDia2;
+    this.AbdominalesDia3 = $ejerciciosService.AbdominalesDia3;
     this.Biceps = $ejerciciosService.Biceps;
     this.Triceps = $ejerciciosService.Tríceps;
     this.Espalda = $ejerciciosService.Espalda;

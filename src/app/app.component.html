@@ -28,6 +28,7 @@
       [repiticionesYSeries]="item.repiticionesYSeries"
     />
     }
+    <h2>Abdominales</h2>
   </section>
   } @if(dia == 2){
   <section class="flex flex-col gap-4">
@@ -78,5 +79,14 @@
     />
     }
   </section>
+  } @for (item of dia == 1 ? AbdominalesDia1 : dia == 2 ? AbdominalesDia2 :
+  AbdominalesDia3; track $index) {
+  <app-card-ejercicio
+    [nombreEjercicio]="item.nombreEjercicio"
+    [imagenGif]="item.imagenGif"
+    [masInformacion]="item.masInformacion"
+    [pesoUtilizado]="item.pesoUtilizado"
+    [repiticionesYSeries]="item.repiticionesYSeries"
+  />
   }
 </main>
